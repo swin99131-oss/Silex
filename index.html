@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Salix — Shop Directly From Independent Makers</title>
-<meta name="description" content="Salix is a social marketplace connecting shoppers directly with independent sellers through live chat, stories, and a smart in-app assistant.">
+<title>Salix — تسوّق مباشرة من صنّاع مستقلين</title>
+<meta name="description" content="Salix سوق اجتماعي يربط المتسوقين مباشرة بالبائعين المستقلين عبر الدردشة الفورية والقصص ومساعد ذكي داخل التطبيق.">
+<meta name="google" content="notranslate-brand">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#faf8f5;--bg:#e9e4da;--ink:#111;--muted:#6b6558;--line:rgba(17,17,17,.12);--chip:#f2efe9;--card:#fff;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+:root{--paper:#faf8f5;--bg:#e9e4da;--ink:#111;--muted:#6b6558;--line:rgba(17,17,17,.12);--chip:#f2efe9;--card:#fff;font-family:'Cairo',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#16151a;--bg:#0f0e0c;--ink:#f5f2ec;--muted:#a39f92;--line:rgba(245,242,236,.12);--chip:#201e1a;--card:#1a1916}}
 :root[data-theme="dark"]{--paper:#16151a;--bg:#0f0e0c;--ink:#f5f2ec;--muted:#a39f92;--line:rgba(245,242,236,.12);--chip:#201e1a;--card:#1a1916}
 img,svg{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
+.brand{font-family:'Fraunces',Georgia,serif;direction:ltr;unicode-bidi:isolate;letter-spacing:-.02em}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--paper) 85%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1120px;margin:0 auto}
-.logo{font-family:'Fraunces',serif;font-weight:700;font-size:24px;letter-spacing:-.02em}
-.nav-links{display:flex;align-items:center;gap:32px;font-size:14px;font-weight:600}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 24px;max-width:1120px;margin:0 auto}
+.logo{font-weight:700;font-size:26px}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}
 .nav-links a{opacity:.72;transition:opacity .2s}
 .nav-links a:hover{opacity:1}
-.nav-cta{background:var(--ink);color:var(--paper);padding:10px 20px;border-radius:999px;font-size:13px;font-weight:700;opacity:1!important}
-@media(max-width:680px){.nav-text-link{display:none}}
-.hero{padding:88px 24px 64px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse at center,rgba(17,17,17,.06),transparent 70%);pointer-events:none}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--line);padding:7px 16px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:28px}
+.nav-cta{background:var(--ink);color:var(--paper);padding:9px 20px;border-radius:999px;font-size:13px;font-weight:700;opacity:1!important}
+@media(max-width:680px){.nav-text-link{display:none}.nav-inner{padding:12px 18px}}
+.hero{padding:72px 20px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;max-width:100%;height:500px;background:radial-gradient(ellipse at center,rgba(17,17,17,.06),transparent 70%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--line);padding:6px 16px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:24px}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#3fa85c;box-shadow:0 0 0 3px rgba(63,168,92,.18)}
-.hero h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(38px,6vw,72px);line-height:1.08;letter-spacing:-.02em;max-width:880px;margin:0 auto 24px}
-.hero h1 em{font-style:italic;font-weight:500;opacity:.6}
-.hero p.sub{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:560px;margin:0 auto 40px}
-.hero-ctas{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:999px;font-size:15px;font-weight:700;transition:transform .2s,box-shadow .2s,opacity .2s;cursor:pointer;border:none}
+.hero h1{font-weight:800;font-size:clamp(32px,6vw,64px);line-height:1.3;max-width:880px;margin:0 auto 22px}
+.hero h1 em{font-style:normal;font-weight:700;opacity:.55}
+.hero p.sub{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:560px;margin:0 auto 36px}
+.hero-ctas{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 28px;border-radius:999px;font-family:inherit;font-size:15px;font-weight:700;transition:transform .2s,opacity .2s;cursor:pointer;border:none}
 .btn-primary{background:var(--ink);color:var(--paper);box-shadow:0 10px 30px -8px rgba(17,17,17,.4)}
 .btn-primary:hover{transform:translateY(-2px)}
 .btn-outline{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
 .btn-outline:hover{background:var(--chip)}
+@media(max-width:480px){.hero-ctas .btn{width:100%;max-width:320px}}
 
-/* PHONE MOCK (fixed) */
-.mock-wrap{margin:64px auto 0;max-width:320px;position:relative}
+/* PHONE MOCK */
+.mock-wrap{margin:56px auto 0;width:min(300px,78vw);position:relative}
 .phone{position:relative;z-index:1;background:#111;border-radius:44px;padding:12px;box-shadow:0 40px 80px -20px rgba(17,17,17,.35),0 0 0 1px rgba(17,17,17,.06)}
-.phone-screen{background:#faf8f5;color:#111;border-radius:33px;overflow:hidden;aspect-ratio:9/18;display:flex;flex-direction:column}
-.ph-status{display:flex;justify-content:space-between;font-size:11px;font-weight:700;padding:14px 22px 2px}
-.ph-header{display:flex;align-items:center;justify-content:space-between;padding:10px 18px 8px}
-.ph-logo{font-family:'Fraunces',serif;font-weight:700;font-size:17px}
+.phone-screen{background:#faf8f5;color:#111;border-radius:33px;overflow:hidden;aspect-ratio:9/18;display:flex;flex-direction:column;container-type:inline-size}
+.ph-status{display:flex;justify-content:space-between;font-size:11px;font-weight:700;padding:14px 22px 2px;direction:ltr}
+.ph-header{display:flex;align-items:center;justify-content:space-between;padding:8px 18px}
+.ph-logo{font-weight:700;font-size:17px}
 .ph-ava{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#d9cdb8,#8c6331)}
 .ph-stories{display:flex;gap:10px;padding:4px 18px 12px}
 .ph-story{flex:0 0 auto;width:50px;text-align:center}
@@ -57,208 +60,211 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color
 .ph-story-inner.b{background:linear-gradient(135deg,#355b83,#171923)}
 .ph-story-inner.c{background:linear-gradient(135deg,#536b4c,#171923)}
 .ph-story-inner.d{background:linear-gradient(135deg,#8c6331,#171923)}
-.ph-story-label{font-size:9px;margin-top:4px;color:#6b6558;font-weight:600}
+.ph-story-label{font-size:10px;margin-top:2px;color:#6b6558;font-weight:600;line-height:1.4}
 .ph-grid{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:min-content;align-content:start;gap:10px;padding:6px 16px 12px;overflow:hidden}
-.ph-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px -8px rgba(17,17,17,.15);text-align:left}
+.ph-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px -8px rgba(17,17,17,.15)}
 .ph-card-img{aspect-ratio:1/.8;background:linear-gradient(135deg,#e7ddc9,#cbb38f);display:flex;align-items:center;justify-content:center;font-size:28px}
 .ph-card-img.b{background:linear-gradient(135deg,#dfe6df,#9fb39a)}
 .ph-card-img.c{background:linear-gradient(135deg,#e4e0ec,#b7a7cf)}
 .ph-card-img.d{background:linear-gradient(135deg,#f0ddd5,#d79e8a)}
-.ph-card-body{padding:7px 10px 9px}
-.ph-card-title{font-size:11px;font-weight:700;line-height:1.3}
+.ph-card-body{padding:6px 10px 8px}
+.ph-card-title{font-size:11px;font-weight:700;line-height:1.4}
 .ph-card-price{font-size:11px;color:#6b6558;font-weight:600}
 .ph-nav{display:flex;justify-content:space-around;padding:11px 10px 14px;border-top:1px solid rgba(17,17,17,.1);background:#faf8f5}
 .ph-nav-item{width:20px;height:20px;border-radius:6px;background:rgba(17,17,17,.12)}
 .ph-nav-item.active{background:#111}
-.float-chip{position:absolute;z-index:2;background:var(--card);color:var(--ink);border-radius:18px;padding:11px 16px;box-shadow:0 16px 40px -12px rgba(17,17,17,.3);display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;border:1px solid var(--line);white-space:nowrap}
-.float-chip.chat{top:14%;left:-70px}
-.float-chip.live{bottom:16%;right:-60px}
+.float-chip{position:absolute;z-index:2;background:var(--card);color:var(--ink);border-radius:18px;padding:10px 16px;box-shadow:0 16px 40px -12px rgba(17,17,17,.3);display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;border:1px solid var(--line);white-space:nowrap}
+.float-chip.chat{top:14%;right:-90px}
+.float-chip.live{bottom:16%;left:-80px}
 .chip-dot{width:8px;height:8px;border-radius:50%;background:#3fa85c}
-@media(max-width:560px){.float-chip.chat{left:-10px}.float-chip.live{right:-10px}}
+@media(max-width:700px){.float-chip.chat{right:-14px}.float-chip.live{left:-14px}.float-chip{font-size:11.5px;padding:8px 12px}}
 
 .stats-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:36px 24px;gap:20px}
-.stat-num{font-family:'Fraunces',serif;font-size:clamp(22px,3vw,32px);font-weight:600}
-.stat-label{font-size:12px;color:var(--muted);font-weight:600;margin-top:4px}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:32px 24px;gap:20px}
+.stat-num{font-weight:800;font-size:clamp(22px,3vw,32px);line-height:1.3}
+.stat-label{font-size:13px;color:var(--muted);font-weight:600;margin-top:2px}
 @media(max-width:680px){.stats-row{grid-template-columns:repeat(2,1fr)}}
-.section{padding:96px 24px}
-.section-head{text-align:center;max-width:620px;margin:0 auto 64px}
-.section-tag{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
-.section-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,4vw,46px);letter-spacing:-.01em;line-height:1.15}
-.section-head p{color:var(--muted);font-size:16px;margin-top:16px}
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1120px;margin:0 auto}
-.feature-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 28px;transition:transform .25s,box-shadow .25s}
+.section{padding:88px 20px}
+.section-head{text-align:center;max-width:620px;margin:0 auto 56px}
+.section-tag{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:10px}
+.section-head h2{font-weight:800;font-size:clamp(26px,4vw,42px);line-height:1.35}
+.section-head p{color:var(--muted);font-size:16px;margin-top:14px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px;margin:0 auto}
+.feature-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px 26px;transition:transform .25s,box-shadow .25s}
 .feature-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -16px rgba(17,17,17,.14)}
-.feature-icon{width:48px;height:48px;border-radius:14px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:20px}
-.feature-card h3{font-size:17px;font-weight:700;margin-bottom:8px}
-.feature-card p{font-size:14px;color:var(--muted);line-height:1.65}
-@media(max-width:860px){.feature-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.feature-grid{grid-template-columns:1fr}}
+.feature-icon{width:48px;height:48px;border-radius:14px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px}
+.feature-card h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.feature-card p{font-size:14.5px;color:var(--muted);line-height:1.8}
+@media(max-width:900px){.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.feature-grid{grid-template-columns:1fr}.section{padding:64px 18px}}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1000px;margin:0 auto}
 .step{text-align:center}
-.step-num{width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:20px;margin:0 auto 20px}
-.step h3{font-size:16px;font-weight:700;margin-bottom:8px}
-.step p{font-size:13.5px;color:var(--muted);max-width:240px;margin:0 auto}
-@media(max-width:760px){.steps{grid-template-columns:1fr;gap:48px}}
-.cta-band{background:var(--ink);color:var(--paper);border-radius:32px;max-width:1120px;margin:0 auto;padding:72px 40px;text-align:center;position:relative;overflow:hidden}
-.cta-band::before{content:"";position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);top:-200px;right:-100px}
-.cta-band h2{font-family:'Fraunces',serif;font-size:clamp(28px,4vw,42px);font-weight:600;margin-bottom:16px;position:relative}
-.cta-band p{color:rgba(250,248,245,.7);max-width:480px;margin:0 auto 32px;position:relative}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;margin:0 auto 18px}
+.step h3{font-size:17px;font-weight:700;margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted);max-width:260px;margin:0 auto;line-height:1.8}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:44px}}
+.cta-band{background:var(--ink);color:var(--paper);border-radius:32px;max-width:1120px;margin:0 auto;padding:64px 28px;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);top:-200px;left:-100px}
+.cta-band h2{font-weight:800;font-size:clamp(26px,4vw,40px);line-height:1.35;margin-bottom:14px;position:relative}
+.cta-band p{color:rgba(250,248,245,.72);max-width:480px;margin:0 auto 28px;position:relative}
 .cta-band .btn-primary{background:var(--paper);color:var(--ink)}
-.cta-band-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-band-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
 .btn-ghost-dark{border:1.5px solid rgba(250,248,245,.28);color:var(--paper);background:transparent}
 .btn-ghost-dark:hover{background:rgba(250,248,245,.08)}
-footer{padding:56px 24px 40px;border-top:1px solid var(--line)}
+@media(max-width:480px){.cta-band-actions .btn{width:100%}}
+footer{padding:52px 24px 36px;border-top:1px solid var(--line)}
 .footer-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px}
-.footer-brand .logo{margin-bottom:10px}
-.footer-brand p{color:var(--muted);font-size:13.5px;max-width:280px}
+.footer-brand .logo{margin-bottom:8px}
+.footer-brand p{color:var(--muted);font-size:14px;max-width:300px}
 .footer-links{display:flex;gap:56px;flex-wrap:wrap}
-.footer-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:14px}
-.footer-col a{display:block;font-size:14px;font-weight:500;margin-bottom:10px;opacity:.85}
+.footer-col h4{font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px}
+.footer-col a{display:block;font-size:14.5px;font-weight:500;margin-bottom:8px;opacity:.85}
 .footer-col a:hover{opacity:1;text-decoration:underline}
 .footer-social{display:flex;align-items:center;gap:10px}
-.social-btn{width:38px;height:38px;border-radius:50%;background:var(--chip);display:flex;align-items:center;justify-content:center;border:1px solid var(--line);font-weight:800;font-size:17px;transition:background .2s,transform .2s}
+.social-btn{width:40px;height:40px;border-radius:50%;background:var(--chip);display:flex;align-items:center;justify-content:center;border:1px solid var(--line);font-family:Arial,sans-serif;font-weight:800;font-size:18px;transition:background .2s,transform .2s}
 .social-btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
-.footer-bottom{max-width:1120px;margin:48px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted)}
-.contact-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px;max-width:480px;margin:0 auto;text-align:center}
-.contact-icon{width:56px;height:56px;border-radius:16px;background:var(--chip);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px}
-.contact-email{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;font-size:15px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--paper)}
+.footer-bottom{max-width:1120px;margin:40px auto 0;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--muted)}
+@media(max-width:560px){.footer-links{gap:36px}}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 24px;max-width:480px;margin:0 auto;text-align:center}
+.contact-icon{width:56px;height:56px;border-radius:16px;background:var(--chip);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:24px}
+.contact-email{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:700;font-size:15px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--paper);direction:ltr;max-width:100%;word-break:break-all}
 .contact-email:hover{opacity:.9}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <div class="logo">Salix</div>
+    <div class="logo brand" translate="no">Salix</div>
     <div class="nav-links">
-      <a href="#features" class="nav-text-link">Features</a>
-      <a href="#how" class="nav-text-link">How it works</a>
-      <a href="#contact" class="nav-text-link">Contact</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
+      <a href="#features" class="nav-text-link">المزايا</a>
+      <a href="#how" class="nav-text-link">كيف يعمل</a>
+      <a href="#contact" class="nav-text-link">تواصل</a>
+      <a href="#contact" class="nav-cta">تواصل معنا</a>
     </div>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="eyebrow"><span class="dot"></span> Free for every seller, right now</div>
-  <h1>Shop directly from <em>independent makers</em>,<br>chat in real time, buy with trust.</h1>
-  <p class="sub">Salix is a social marketplace where buyers and sellers talk, share, and transact in one place — no middlemen, no waiting.</p>
+  <div class="eyebrow"><span class="dot"></span> مجاني لكل بائع حاليًا</div>
+  <h1>تسوّق مباشرة من <em>صنّاع مستقلين</em>،<br>تحدّث فورًا، واشترِ بثقة.</h1>
+  <p class="sub"><span class="brand" translate="no">Salix</span> سوق اجتماعي يتحدث فيه المشترون والبائعون ويتبادلون ويتعاملون في مكان واحد — بلا وسطاء وبلا انتظار.</p>
   <div class="hero-ctas">
-    <a href="#contact" class="btn btn-primary">Partner with us →</a>
-    <a href="#features" class="btn btn-outline">See how it works</a>
+    <a href="#contact" class="btn btn-primary">كن شريكًا معنا ←</a>
+    <a href="#features" class="btn btn-outline">اكتشف كيف يعمل</a>
   </div>
 
   <div class="mock-wrap">
-    <div class="float-chip chat"><span class="chip-dot"></span> New message from seller</div>
+    <div class="float-chip chat"><span class="chip-dot"></span> رسالة جديدة من البائع</div>
     <div class="phone">
       <div class="phone-screen">
         <div class="ph-status"><span>9:41</span><span>●●●</span></div>
-        <div class="ph-header"><span class="ph-logo">Salix</span><span class="ph-ava"></span></div>
+        <div class="ph-header"><span class="ph-logo brand" translate="no">Salix</span><span class="ph-ava"></span></div>
         <div class="ph-stories">
-          <div class="ph-story"><div class="ph-story-ring"><div class="ph-story-inner"></div></div><div class="ph-story-label">Nora</div></div>
-          <div class="ph-story"><div class="ph-story-ring"><div class="ph-story-inner b"></div></div><div class="ph-story-label">Finch</div></div>
-          <div class="ph-story"><div class="ph-story-ring seen"><div class="ph-story-inner c"></div></div><div class="ph-story-label">Loom</div></div>
-          <div class="ph-story"><div class="ph-story-ring seen"><div class="ph-story-inner d"></div></div><div class="ph-story-label">Kiln</div></div>
+          <div class="ph-story"><div class="ph-story-ring"><div class="ph-story-inner"></div></div><div class="ph-story-label">نورة</div></div>
+          <div class="ph-story"><div class="ph-story-ring"><div class="ph-story-inner b"></div></div><div class="ph-story-label">فنش</div></div>
+          <div class="ph-story"><div class="ph-story-ring seen"><div class="ph-story-inner c"></div></div><div class="ph-story-label">نسيج</div></div>
+          <div class="ph-story"><div class="ph-story-ring seen"><div class="ph-story-inner d"></div></div><div class="ph-story-label">فرن</div></div>
         </div>
         <div class="ph-grid">
-          <div class="ph-card"><div class="ph-card-img">👜</div><div class="ph-card-body"><div class="ph-card-title">Woven tote</div><div class="ph-card-price">$42</div></div></div>
-          <div class="ph-card"><div class="ph-card-img b">🪴</div><div class="ph-card-body"><div class="ph-card-title">Ceramic pot</div><div class="ph-card-price">$28</div></div></div>
-          <div class="ph-card"><div class="ph-card-img c">🕯️</div><div class="ph-card-body"><div class="ph-card-title">Soy candle</div><div class="ph-card-price">$16</div></div></div>
-          <div class="ph-card"><div class="ph-card-img d">👟</div><div class="ph-card-body"><div class="ph-card-title">Suede shoes</div><div class="ph-card-price">$89</div></div></div>
+          <div class="ph-card"><div class="ph-card-img">👜</div><div class="ph-card-body"><div class="ph-card-title">حقيبة منسوجة</div><div class="ph-card-price">$42</div></div></div>
+          <div class="ph-card"><div class="ph-card-img b">🪴</div><div class="ph-card-body"><div class="ph-card-title">أصيص خزف</div><div class="ph-card-price">$28</div></div></div>
+          <div class="ph-card"><div class="ph-card-img c">🕯️</div><div class="ph-card-body"><div class="ph-card-title">شمعة الصويا</div><div class="ph-card-price">$16</div></div></div>
+          <div class="ph-card"><div class="ph-card-img d">👟</div><div class="ph-card-body"><div class="ph-card-title">حذاء جلد</div><div class="ph-card-price">$89</div></div></div>
         </div>
         <div class="ph-nav">
           <div class="ph-nav-item active"></div><div class="ph-nav-item"></div><div class="ph-nav-item"></div><div class="ph-nav-item"></div><div class="ph-nav-item"></div>
         </div>
       </div>
     </div>
-    <div class="float-chip live"><span class="chip-dot"></span> Seller is online</div>
+    <div class="float-chip live"><span class="chip-dot"></span> البائع متصل الآن</div>
   </div>
 </header>
 
 <div class="stats-strip">
   <div class="wrap stats-row">
-    <div><div class="stat-num">100%</div><div class="stat-label">Free to launch</div></div>
-    <div><div class="stat-num">0</div><div class="stat-label">Listing fees</div></div>
-    <div><div class="stat-num">24/7</div><div class="stat-label">In-app chat</div></div>
-    <div><div class="stat-num">1</div><div class="stat-label">Unified storefront</div></div>
+    <div><div class="stat-num">100%</div><div class="stat-label">مجاني للانطلاق</div></div>
+    <div><div class="stat-num">0</div><div class="stat-label">رسوم إدراج</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-label">دردشة داخل التطبيق</div></div>
+    <div><div class="stat-num">1</div><div class="stat-label">متجر موحّد</div></div>
   </div>
 </div>
 
 <section class="section" id="features">
   <div class="section-head reveal">
-    <div class="section-tag">What Salix does</div>
-    <h2>Everything a modern storefront needs, built in.</h2>
-    <p>From the first message to the final sale, Salix keeps buyers and sellers connected without ever leaving the app.</p>
+    <div class="section-tag">ماذا يقدّم <span class="brand" translate="no">Salix</span></div>
+    <h2>كل ما يحتاجه المتجر العصري، جاهز داخل التطبيق.</h2>
+    <p>من أول رسالة حتى إتمام البيع، يبقي <span class="brand" translate="no">Salix</span> المشتري والبائع على اتصال دون مغادرة التطبيق.</p>
   </div>
   <div class="feature-grid">
-    <div class="feature-card reveal"><div class="feature-icon">💬</div><h3>Real-time chat</h3><p>Buyers message sellers directly — text, photos, video, voice notes, even live voice and video calls, all built in.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">📖</div><h3>Stories &amp; posts</h3><p>Sellers share daily stories and posts to showcase new arrivals, the same way shoppers already browse social feeds.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🛍️</div><h3>Unified storefronts</h3><p>Every seller gets a clean, branded profile — products, reviews, followers, and conversations in one place.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🤖</div><h3>Smart store assistant</h3><p>An always-on assistant answers delivery, pricing, and policy questions instantly, trained on each seller's own rules.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">📣</div><h3>Built-in promotion</h3><p>Sellers boost products, banners, and story ads to reach more shoppers — currently free for everyone on the platform.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🔒</div><h3>Safe by design</h3><p>Reporting, blocking, and admin review tools keep every conversation and transaction on Salix trustworthy.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">💬</div><h3>دردشة فورية</h3><p>يراسل المشترون البائعين مباشرة — نصوص وصور وفيديو ورسائل صوتية، وحتى مكالمات صوتية ومرئية مباشرة، كلها مدمجة.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">📖</div><h3>قصص ومنشورات</h3><p>ينشر البائعون قصصًا ومنشورات يومية لعرض جديدهم، بنفس الطريقة التي يتصفح بها المتسوقون وسائل التواصل.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🛍️</div><h3>متاجر موحّدة</h3><p>يحصل كل بائع على صفحة أنيقة بعلامته: المنتجات والتقييمات والمتابعون والمحادثات في مكان واحد.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🤖</div><h3>مساعد متجر ذكي</h3><p>مساعد يعمل دائمًا يجيب فورًا عن أسئلة التوصيل والأسعار والسياسات، ومدرَّب على قواعد كل بائع.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">📣</div><h3>ترويج مدمج</h3><p>يروّج البائعون لمنتجاتهم ولافتاتهم وإعلانات القصص ليصلوا إلى مزيد من المتسوقين — مجانًا حاليًا للجميع.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🔒</div><h3>آمن بالتصميم</h3><p>أدوات الإبلاغ والحظر ومراجعة الإدارة تحافظ على موثوقية كل محادثة ومعاملة.</p></div>
   </div>
 </section>
 
 <section class="section" id="how" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="section-head reveal">
-    <div class="section-tag">Simple by design</div>
-    <h2>Up and running in three steps.</h2>
+    <div class="section-tag">بسيط بطبيعته</div>
+    <h2>ابدأ في ثلاث خطوات.</h2>
   </div>
   <div class="steps">
-    <div class="step reveal"><div class="step-num">1</div><h3>Create a storefront</h3><p>Sellers sign up, add products, and personalize their profile in minutes — free, no setup fees.</p></div>
-    <div class="step reveal"><div class="step-num">2</div><h3>Get discovered</h3><p>Shoppers browse, follow, and find products through search, stories, and the discovery feed.</p></div>
-    <div class="step reveal"><div class="step-num">3</div><h3>Chat &amp; close the sale</h3><p>Buyers message sellers directly to ask questions, confirm details, and complete the order.</p></div>
+    <div class="step reveal"><div class="step-num">1</div><h3>أنشئ متجرك</h3><p>يسجّل البائع ويضيف منتجاته ويخصّص صفحته في دقائق — مجانًا وبلا رسوم إعداد.</p></div>
+    <div class="step reveal"><div class="step-num">2</div><h3>اجعل الناس يكتشفونك</h3><p>يتصفح المتسوقون ويتابعون ويجدون المنتجات عبر البحث والقصص وصفحة الاكتشاف.</p></div>
+    <div class="step reveal"><div class="step-num">3</div><h3>تحدّث وأتمّ البيع</h3><p>يراسل المشترون البائعين مباشرة للسؤال وتأكيد التفاصيل وإتمام الطلب.</p></div>
   </div>
 </section>
 
 <section class="section">
   <div class="cta-band reveal">
-    <h2>Let's bring Salix to the world.</h2>
-    <p>We're reaching out to partners and platforms to help launch Salix. If our revenue model works for you, let's talk.</p>
+    <h2>لنأخذ <span class="brand" translate="no">Salix</span> إلى العالم.</h2>
+    <p>نتواصل مع الشركاء والمنصات للمساعدة في إطلاق <span class="brand" translate="no">Salix</span>. إن كان نموذج أرباحنا مناسبًا لك، فلنتحدث.</p>
     <div class="cta-band-actions">
-      <a href="#contact" class="btn btn-primary">Contact us</a>
-      <a href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener" class="btn btn-ghost-dark">Follow on Facebook</a>
+      <a href="#contact" class="btn btn-primary">تواصل معنا</a>
+      <a href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener" class="btn btn-ghost-dark">تابعنا على فيسبوك</a>
     </div>
   </div>
 </section>
 
 <section class="section" id="contact">
   <div class="section-head reveal">
-    <div class="section-tag">Get in touch</div>
-    <h2>We'd love to hear from you.</h2>
-    <p>Whether you're a platform, an investor, or just curious about Salix — reach out directly.</p>
+    <div class="section-tag">تواصل</div>
+    <h2>يسعدنا سماعك.</h2>
+    <p>سواء كنت منصة أو مستثمرًا أو فضوليًا تجاه <span class="brand" translate="no">Salix</span> — راسلنا مباشرة.</p>
   </div>
   <div class="contact-card reveal">
     <div class="contact-icon">✉️</div>
-    <h3 style="font-size:18px;font-weight:700;margin-bottom:8px;">Email us directly</h3>
-    <p style="color:var(--muted);font-size:14px;">We read every message personally and reply as soon as we can.</p>
-    <a class="contact-email" href="mailto:swin99131@gmail.com">✉️ swin99131@gmail.com</a>
+    <h3 style="font-size:18px;font-weight:700;margin-bottom:6px;">راسلنا مباشرة</h3>
+    <p style="color:var(--muted);font-size:14.5px;">نقرأ كل رسالة بأنفسنا ونردّ في أقرب وقت.</p>
+    <a class="contact-email" href="mailto:swin99131@gmail.com" translate="no">✉️ swin99131@gmail.com</a>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="logo">Salix</div>
-      <p>A social marketplace connecting shoppers with independent sellers — built for real conversation, not just checkout.</p>
-      <div class="footer-social" style="margin-top:20px;">
-        <a class="social-btn" href="mailto:swin99131@gmail.com" aria-label="Email" title="Email">✉️</a>
-        <a class="social-btn" href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">f</a>
+      <div class="logo brand" translate="no">Salix</div>
+      <p>سوق اجتماعي يربط المتسوقين بالبائعين المستقلين — صُمّم للحوار الحقيقي، لا للدفع فقط.</p>
+      <div class="footer-social" style="margin-top:18px;">
+        <a class="social-btn" href="mailto:swin99131@gmail.com" aria-label="البريد الإلكتروني" title="البريد الإلكتروني">✉️</a>
+        <a class="social-btn" href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener" aria-label="فيسبوك" title="فيسبوك" translate="no">f</a>
       </div>
     </div>
     <div class="footer-links">
-      <div class="footer-col"><h4>Product</h4><a href="#features">Features</a><a href="#how">How it works</a></div>
-      <div class="footer-col"><h4>Company</h4><a href="#contact">Contact</a><a href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener">Facebook</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="#rights">Rights &amp; Terms</a></div>
+      <div class="footer-col"><h4>المنتج</h4><a href="#features">المزايا</a><a href="#how">كيف يعمل</a></div>
+      <div class="footer-col"><h4>الشركة</h4><a href="#contact">تواصل</a><a href="https://www.facebook.com/share/18Yj2WW48L/" target="_blank" rel="noopener">فيسبوك</a></div>
+      <div class="footer-col"><h4>قانوني</h4><a href="#rights">الحقوق والشروط</a></div>
     </div>
   </div>
   <div class="footer-bottom" id="rights">
-    <span>© <span id="year"></span> Salix. All rights reserved.</span>
-    <span>Built with care, for independent sellers everywhere.</span>
+    <span>© <span id="year"></span> <span class="brand" translate="no">Salix</span>. جميع الحقوق محفوظة.</span>
+    <span>صُنع بعناية للبائعين المستقلين في كل مكان.</span>
   </div>
 </footer>
 
